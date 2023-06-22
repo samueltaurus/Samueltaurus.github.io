@@ -1,3 +1,11 @@
 h1{
     text-align: center;
 }
+
+body{
+    background-color:burlywood
+}
+
+.menu{
+    background-image: image-set(c:\Users\samue\Downloads\MyFlow\Doug test site.jpg)
+}
