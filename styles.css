@@ -1,6 +1,21 @@
 @font-face {
-    font-family: Bingodilan;
-    src: url(./assets/fonts/BingoDilan-Regular.ttf);
+    font-family: CS-bd;
+    src: url('./assets/fonts/BingoDilan-Regular.ttf');
+}
+@font-face {
+    font-family: CS-gpr;
+    src: url('./assets/fonts/Gotham\ Pro\ Regular.ttf')
+}
+@font-face {
+    font-family: CS-gpm;
+    src: url('./assets/fonts/Gotham\ Pro\ Medium.ttf');
+}
+
+:root {
+    --color1: #e2c698 ;
+    --color2:  hsl(199, 13%, 42%);
+    --color3: #943927 ;
+    --color4: white ;
 }
 
 * {
@@ -8,44 +23,77 @@
     margin: 0;
 }
 
-.top-page {
-    background-color: hsl(199, 13%, 42%);
+header {
+    border: 10px;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--color2) ;
     box-shadow: 0 0 10px 0 black;
+    color: var(--color3);
     max-height: 200px;
     width: 100%;
-    font-family: Bingodilan;
+    font-family: CS-gpm;
+    font-size: 1.8rem;
+    padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 15px ;
+    justify-content: space-between;
 }
 
-.top-page ul {
+nav ul {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 20px; */
 }
 
-.top-page li {
+nav ul li {
     list-style: none;
-    background-color: hsl(199, 13%, 42% 0.5);
+}
+
+ nav ul li a {
+    color: #943927;
+    text-decoration: none;
     box-shadow: 0 0 10px 0 black;
     border-radius: 20%;
-    height: 40px;
-    width: 100px;
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /* padding: 15px;
+    margin: auto 20px */
+ }
+ 
+nav ul li a:hover {
+    color: #e2c698;
+    transition: all .2s ease;
 }
 
 .logo-doug {
     width: 150px;
-    /* margin: 13px 40% 0 40%; */
+    border-radius: 100px;
     display: flex;
-
 }
 
+.btn {
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 30%;
+    color: #943927;
+    text-decoration: none;
+    padding: 10px 15px;
+    /* margin: 20px 0; */
+    display: block;
+}
+
+.btn:hover {
+    color: #e2c698;
+    transition: all .2s ease;
+}
+
+
+
+
+
+
+
+
 .main {
-    background-color: #E2C698;
+    background: url('./assets/img/fondliege.jpg') no-repeat center/cover ;
     min-height: 100px;
     width: 100%;
     padding-top: 50px;
@@ -56,11 +104,36 @@
     align-items: center;
 }
 
-.fond-liege {
-background-color: red;
+.title {
+    font-size: 10vw;
+    font-family: CS-bd;
+    color: #943927;
 }
 
-.main-doug-pic {
-    height: 400px;
+ .main img{
+    width: 80%;
+    margin: 50px;
+    transition: all .6s ease;
+ }
+
+ .main img:hover{
+    transition: all .6s ease;
+    box-shadow: 0 0 40px 20px #943927;
+ }
+
+.ucpcla {
+    font-size: 6vw;
+    font-family: CS-gpr;
+    color: #DC513B;
 }
 
+
+
+
+
+
+.peoples {
+    background-color: hsl(199, 13%, 42%);
+    min-height: 600px;
+    font-family: CS-gpm;
+}
