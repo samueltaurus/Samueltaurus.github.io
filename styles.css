@@ -1,139 +1,142 @@
 @font-face {
-    font-family: CS-bd;
-    src: url('./assets/fonts/BingoDilan-Regular.ttf');
+  font-family: CS-bd;
+  src: url("./assets/fonts/BingoDilan-Regular.ttf");
 }
 @font-face {
-    font-family: CS-gpr;
-    src: url('./assets/fonts/Gotham\ Pro\ Regular.ttf')
+  font-family: CS-gpr;
+  src: url("./assets/fonts/Gotham\ Pro\ Regular.ttf");
 }
 @font-face {
-    font-family: CS-gpm;
-    src: url('./assets/fonts/Gotham\ Pro\ Medium.ttf');
+  font-family: CS-gpm;
+  src: url("./assets/fonts/Gotham\ Pro\ Medium.ttf");
 }
 
 :root {
-    --color1: #e2c698 ;
-    --color2:  hsl(199, 13%, 42%);
-    --color3: #943927 ;
-    --color4: white ;
+  --color1: #e2c698;
+  --color2: hsl(199, 13%, 42%);
+  --color3: #943927;
+  --color4: white;
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 header {
-    border: 10px;
-    border-radius: 0 0 10px 10px;
-    background-color: var(--color2) ;
-    box-shadow: 0 0 10px 0 black;
-    color: var(--color3);
-    max-height: 200px;
-    width: 100%;
-    font-family: CS-gpm;
-    font-size: 1.8rem;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background-color: var(--color2);
+  max-height: 200px;
+  font-family: CS-gpm;
+  font-size: 1.8rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* margin: 20px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 nav ul li {
-    list-style: none;
+  box-shadow: 0 0 10px 0 black;
+  border-radius: 10%;
+  padding: 15px;
+  margin: 0 20px;
 }
 
- nav ul li a {
-    color: #943927;
-    text-decoration: none;
-    box-shadow: 0 0 10px 0 black;
-    border-radius: 20%;
-    /* padding: 15px;
-    margin: auto 20px */
- }
- 
+nav ul li a {
+  color: #943927;
+}
+
 nav ul li a:hover {
-    color: #e2c698;
-    transition: all .2s ease;
+  color: #e2c698;
+  transition: all 5s ease;
 }
 
 .logo-doug {
-    width: 150px;
-    border-radius: 100px;
-    display: flex;
+  width: 150px;
+  border-radius: 100px;
+  display: flex;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .btn {
-    box-shadow: 0 0 10px 0 black;
-    border-radius: 30%;
-    color: #943927;
-    text-decoration: none;
-    padding: 10px 15px;
-    /* margin: 20px 0; */
-    display: block;
+  box-shadow: 0 0 10px 0 black;
+  border-radius: 30%;
+  color: #943927;
+  text-decoration: none;
+  padding: 10px 15px;
 }
 
 .btn:hover {
-    color: #e2c698;
-    transition: all .2s ease;
+  color: #e2c698;
+  transition: all 0.2s ease;
 }
 
-
-
-
-
-
-
-
 .main {
-    background: url('./assets/img/fondliege.jpg') no-repeat center/cover ;
-    min-height: 100px;
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
+  background: url("./assets/img/fondliege.jpg") no-repeat center/cover;
+  min-height: 100px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .title {
-    font-size: 10vw;
-    font-family: CS-bd;
-    color: #943927;
+  font-size: 10vw;
+  font-family: CS-bd;
+  color: #943927;
 }
 
- .main img{
-    width: 80%;
-    margin: 50px;
-    transition: all .6s ease;
- }
+.main img {
+  width: 40%;
+  margin: 50px;
+  transition: all 0.2s ease;
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    0% 80%,
+    0% 20%
+  );
+}
 
- .main img:hover{
-    transition: all .6s ease;
-    box-shadow: 0 0 40px 20px #943927;
- }
+.main img:hover {
+  width: 80%;
+  transition: all 0.6s ease;
+  box-shadow: 0 0 40px 20px #943927;
+  clip-path: none;
+}
 
 .ucpcla {
-    font-size: 6vw;
-    font-family: CS-gpr;
-    color: #DC513B;
+  font-size: 6vw;
+  font-family: CS-gpr;
+  color: #dc513b;
 }
 
-
-
-
-
-
 .peoples {
-    background-color: hsl(199, 13%, 42%);
-    min-height: 600px;
-    font-family: CS-gpm;
+  background-color: hsl(199, 13%, 42%);
+  min-height: 600px;
+  font-family: CS-gpm;
+}
+.peoples:before {
+  content: "\2117";
 }
